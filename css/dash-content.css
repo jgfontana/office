@@ -1,0 +1,244 @@
+@import url(./variables.css);
+
+.dash-content {
+  width: 100%;
+  max-width: 1216px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+section {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+section .container {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+section h2.title {
+  margin-bottom: 2rem !important;
+  font-size: 1.2rem;
+  color: var(--text);
+  line-height: 125%;
+  margin: 0;
+}
+
+.carrousel {
+  position: static;
+  overflow: hidden;
+  margin: 0px -0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.carrousel ul {
+  overflow: unset;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.carrousel ul li {
+  flex: 1 1 auto;
+  position: relative;
+  width: 286px;
+}
+.card {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+  margin: 0 0.75rem;
+}
+
+.card div.card-body {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 16.4rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.card div.card-body a{
+  opacity: 1;
+  transition: opacity 0.2s ease 0s;
+  text-decoration: none;
+}
+
+.card div.card-body a:hover{
+  opacity: 0.5;
+}
+
+.card div.card-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .background {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.card .background span {
+  box-sizing: border-box;
+  display: block;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 56.34% 0px 0px;
+}
+
+.card .background img {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  filter: none;
+  background-size: cover;
+  background-image: none;
+  background-position: 0% 0%;
+}
+
+.card h2 {
+  min-height: 51px;
+  margin: 0px;
+  font-size: 1rem;
+  line-height: 160%;
+  color: var(--text);
+}
+
+.card .badge {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.card .badge a {
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text)
+}
+
+.badge-content {
+  display: flex;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  height: 1.5rem;
+  padding: 0 0.75rem;
+  font-size: 0.625rem;
+  background-color: var(--white);
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 99999px;
+}
+
+.card .more {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 2;
+}
+
+.card .more button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.new {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  height: 1.5rem;
+  font-size: 0.625rem;
+  background: rgb(22, 56, 64);
+  color: #1EF7D0;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  position: absolute !important;
+  z-index: 2;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+.new span {
+  display: block;
+  margin: 0px;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #1EF7D0;
+}
+
+button.left {
+  all: unset;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 35px;
+  top: -4.5rem;
+  left: auto;
+  right: 2.5rem;
+  cursor: pointer;
+  background: var(--white);
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+}
+
+button.left.right {
+  left: auto;
+  right: 0px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1200px) {
+  .carrousel ul li {
+    width: 369px;
+  }
+}

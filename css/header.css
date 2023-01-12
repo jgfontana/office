@@ -1,0 +1,95 @@
+@import url(./variables.css);
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: calc(1184px);
+}
+
+article .container {
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+}
+
+article .container .actions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+article .container .actions button {
+  text-transform: uppercase;
+  background-color: var(--white);
+  color: var(--nav-item-active);
+  height: 48px;
+  padding: 0px 1rem;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease 0s, box-shadow 0.2s ease 0s;
+}
+
+article .container .actions button.flex-center {
+  background-color: var(--blue);
+  color: white;
+}
+
+article .container .actions button span {
+  margin-left: 0.75rem;
+}
+
+form {
+  width: 100%;
+  position: relative;
+}
+
+form div {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: var(--white);
+  color: var(--input);
+  border: none;
+}
+
+form div img {
+  margin-right: 1rem;
+}
+
+form input {
+  flex: 1 1 0%;
+  background: transparent;
+  padding: 0px;
+  border: 0px;
+  outline: 0;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 17px;
+  width: 100%;
+  transition: border 0.2s ease 0s;
+}
+
+.separator {
+  background-color: var(--border);
+  width: 1px;
+  height: 3rem;
+  margin: 0 1.5rem;
+}
+
+.actions .buttons {
+  display: flex;
+  gap: 0.5rem;
+}
